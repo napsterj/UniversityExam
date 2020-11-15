@@ -8,7 +8,7 @@ namespace UniversityExam
 {
     /*################### IMPORTANT NOTE ###################################
       As specified in the the Question, that only one file is expected from  
-      the applicant containing the code. ^[a-zA-Z0-9\-–'’()\/.,\s]+$
+      the applicant containing the code.
 
       The application I have created is  C# .Net Core 3.0 console application
       To kickoff the console application to run, while creating console 
