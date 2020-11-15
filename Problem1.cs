@@ -6,6 +6,14 @@ using System.Linq;
 
 namespace UniversityExam
 {    
+    /*########### Important Note ##############
+    For reference or in case of issues during running, I am adding my personal github repo
+    which contains the entire project and can be accessed through below link:
+
+    https://github.com/napsterj/UniversityExam
+    
+    */
+
     class Program
     {        
         static void Main(string[] args)
