@@ -5,34 +5,21 @@ using System.Text.RegularExpressions;
 using System.Linq;
 
 namespace UniversityExam
-{
-    /*################### IMPORTANT NOTE ###################################
-      As specified in the the Question, that only one file is expected from  
-      the applicant containing the code.
-
-      The application I have created is  C# .Net Core 3.0 console application
-      To kickoff the console application to run, while creating console 
-      applications .net provided Program.cs file by default. I am not including 
-      this file for sending you as only the one file is required. Hence
-      I am including the code of my Program.cs file below:
-
-      class Program {        
-        static void Main(string[] args) {                        
+{    
+    class Program
+    {        
+        static void Main(string[] args)
+        {                        
             Problem1 problem1 = new Problem1();
             problem1.ReadInputFile();
         }
-      }
-
-      Before testing the application, please create Program.cs file and
-      paste above code to fire up the project.
-
-    */
+    }
     public class Problem1
     {
         #region Declarations
 
         private string[] flightDetails;
-        private string fileName = "inputFile.txt";
+        private string fileName = "input.txt";
         private string fileParentDirectory = "\\assets\\";
         private string workingDirectory = "UniversityExam";
 
@@ -50,7 +37,7 @@ namespace UniversityExam
             }
             catch (Exception) {
                 // For handling Unix / Linux / Apple Mac OS path separator.
-                filePath = "../UniversityExam/assets/inputFile.txt";
+                filePath = "../UniversityExam/assets/" + fileName;
             }
 
             flightDetails = File.ReadAllText(filePath, Encoding.UTF8).Split("\n");
